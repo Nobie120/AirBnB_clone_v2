@@ -20,7 +20,8 @@ class FileStorage:
                 if (partition[0] == cls.__name__):
                     dic[key] = self.__objects[key]
             return (dic)
-        return FileStorage.__objects
+        else:
+            return FileStorage.__objects
 
     def new(self, obj):
         """Adds new object to storage dictionary"""
